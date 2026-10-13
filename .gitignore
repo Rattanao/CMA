@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.bak*
+
+# ไฟล์งานจริงของลูกค้า — ไม่อัปโหลดขึ้น GitHub
+input/*
+!input/.gitkeep
+output/
+EDI.xlsx
