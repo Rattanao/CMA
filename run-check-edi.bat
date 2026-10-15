@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 cd /d "%~dp0"
-echo ===== Check EDI CMA =====
+echo ===== Check EDI CMS =====
 echo วางไฟล์ MANIFEST (.xls/.xlsx) และ ENTER (.pdf) ไว้ในโฟลเดอร์ input ก่อน
 echo.
 

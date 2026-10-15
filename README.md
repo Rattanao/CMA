@@ -1,4 +1,4 @@
-# Check EDI CMA
+# Check EDI CMS
 
 โปรแกรมตรวจเอกสารขาเข้าเรือก่อนทำใบขนสินค้าขาเข้า — เทียบ **MANIFEST** (`.xls`/`.xlsx`
 ของสายเรือ) กับ **ENTER** (`.pdf` ของลูกค้า/forwarder รวมข้อความสีแดงที่พิมพ์เพิ่มบน PDF)
@@ -21,9 +21,9 @@
 
 ## ใช้ออนไลน์ (ง่ายสุด ไม่ต้องติดตั้ง)
 
-เปิด **<https://rattanao.github.io/CMA/>** → ลากไฟล์ MANIFEST + ENTER (ฟอร์ม AMENDMENT ของ CMA) ใส่ → ใส่ SHED NO. (ถ้ามี) → กด **ตรวจสอบ** → กด **ดาวน์โหลด EDI.xlsx**
+เปิด **<https://rattanao.github.io/CMS/>** → ลากไฟล์ MANIFEST + ENTER (ฟอร์ม AMENDMENT ของ CMS) ใส่ → ใส่ SHED NO. (ถ้ามี) → กด **ตรวจสอบ** → กด **ดาวน์โหลด EDI.xlsx**
 
-ไฟล์ถูกประมวลผลในเบราว์เซอร์ของผู้ใช้เท่านั้น ไม่มีการอัปโหลดไปที่ใด · คู่มือ: <https://rattanao.github.io/CMA/guide.html>
+ไฟล์ถูกประมวลผลในเบราว์เซอร์ของผู้ใช้เท่านั้น ไม่มีการอัปโหลดไปที่ใด · คู่มือ: <https://rattanao.github.io/CMS/guide.html>
 
 ---
 
@@ -34,8 +34,8 @@
 1. ติดตั้ง **Python 3** จาก <https://www.python.org/downloads/>
    - หน้าแรกของตัวติดตั้ง **ติ๊ก ☑ "Add python.exe to PATH"** ก่อนกด Install
 2. ดาวน์โหลดโปรแกรมนี้: หน้า repo กดปุ่มเขียว **Code → Download ZIP**
-   แล้วแตกไฟล์ไว้ที่ไหนก็ได้ (เช่น `Documents\Check EDI CMA`)
-   - หรือถ้ามี git: `git clone https://github.com/Rattanao/CMA.git`
+   แล้วแตกไฟล์ไว้ที่ไหนก็ได้ (เช่น `Documents\Check EDI CMS`)
+   - หรือถ้ามี git: `git clone https://github.com/Rattanao/CMS.git`
 
 ### ใช้งานทุกครั้ง
 
@@ -65,10 +65,10 @@ python scripts/build_edi.py --manifest "input/MANIFEST.xls" --enter "input/ENTER
 2. คัดลอกโฟลเดอร์นี้ไปไว้ที่โฟลเดอร์ skills ของ Claude Code:
 
    ```bash
-   git clone https://github.com/Rattanao/CMA.git ~/.claude/skills/check-edi-cma
+   git clone https://github.com/Rattanao/CMS.git ~/.claude/skills/check-edi-cms
    ```
 
-   (Windows: `C:\Users\<ชื่อผู้ใช้>\.claude\skills\check-edi-cma\` — ต้องมีไฟล์ `SKILL.md` อยู่ในโฟลเดอร์นี้ตรงๆ)
+   (Windows: `C:\Users\<ชื่อผู้ใช้>\.claude\skills\check-edi-cms\` — ต้องมีไฟล์ `SKILL.md` อยู่ในโฟลเดอร์นี้ตรงๆ)
 3. เปิด Claude Code ใหม่ ไปที่โฟลเดอร์งานที่มี MANIFEST + ENTER แล้วพิมพ์ เช่น
    `ตรวจ EDI ให้หน่อย SHED NO. 0141` หรือ `เทียบ MANIFEST กับ ENTER`
 
@@ -82,7 +82,7 @@ python scripts/build_edi.py --manifest "input/MANIFEST.xls" --enter "input/ENTER
 ## โครงสร้างไฟล์
 
 ```
-CMA/
+CMS/
 ├── run-check-edi.bat           ← ดับเบิลคลิกเพื่อรัน
 ├── requirements.txt            ← ไลบรารี Python ที่ต้องใช้
 ├── input/                      ← วาง MANIFEST + ENTER ตรงนี้ (ไม่ถูกอัปโหลดขึ้น GitHub)

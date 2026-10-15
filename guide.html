@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Check EDI CMA</title>
+<title>Check EDI CMS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&family=Anuphan:wght@600;700&display=swap">
 <style>
@@ -119,7 +119,7 @@ footer { color: var(--muted); font-size: 0.85rem; display: grid; gap: 4px; }
 <div class="wrap">
   <header class="head">
     <div class="tag">เครื่องมือตรวจเอกสารขาเข้าเรือ · ใบขนสินค้าขาเข้า</div>
-    <h1>Check EDI CMA</h1>
+    <h1>Check EDI CMS</h1>
     <p class="lede">เทียบ MANIFEST ของสายเรือกับ ENTER ของลูกค้าให้ครบทุก B/L แล้วออกรายงาน EDI.xlsx แบบใส่สี จุดไหนไม่ตรงเห็นได้ทันทีก่อนยื่นใบขน</p>
     <div class="flow" aria-label="ขั้นตอนการทำงาน">
       <span class="doc">MANIFEST.xls</span><span class="op">+</span>
@@ -128,8 +128,8 @@ footer { color: var(--muted); font-size: 0.85rem; display: grid; gap: 4px; }
     </div>
     <div class="cta">
       <a class="btn primary" href="docs/">ตรวจออนไลน์ (ไม่ต้องติดตั้ง)</a>
-      <a class="btn ghost" href="https://github.com/Rattanao/CMA/archive/refs/heads/main.zip">ดาวน์โหลดโปรแกรม (ZIP)</a>
-      <a class="btn ghost" href="https://github.com/Rattanao/CMA">เปิดหน้า GitHub</a>
+      <a class="btn ghost" href="https://github.com/Rattanao/CMS/archive/refs/heads/main.zip">ดาวน์โหลดโปรแกรม (ZIP)</a>
+      <a class="btn ghost" href="https://github.com/Rattanao/CMS">เปิดหน้า GitHub</a>
     </div>
   </header>
 
@@ -222,7 +222,7 @@ footer { color: var(--muted); font-size: 0.85rem; display: grid; gap: 4px; }
     <h2>ใช้กับ Claude Code</h2>
     <p class="sub">สำหรับคนที่ใช้ Claude Code อยู่แล้ว ให้ Claude ตรวจและอธิบายผลให้ และเพิ่มแบบฟอร์ม ENTER ใหม่ได้เอง</p>
     <div class="cmd">
-      <pre id="clone">git clone https://github.com/Rattanao/CMA.git %USERPROFILE%\.claude\skills\check-edi-cma</pre>
+      <pre id="clone">git clone https://github.com/Rattanao/CMS.git %USERPROFILE%\.claude\skills\check-edi-cms</pre>
       <button type="button" id="copy-clone" data-target="clone">คัดลอก</button>
     </div>
     <p class="note">เปิด Claude Code ใหม่ ไปที่โฟลเดอร์งาน แล้วพิมพ์ เช่น “ตรวจ EDI SHED NO. 0141”</p>
@@ -245,7 +245,7 @@ footer { color: var(--muted); font-size: 0.85rem; display: grid; gap: 4px; }
 
   <footer>
     <p>รายงานนี้เป็นตัวช่วยตรวจ ก่อนยื่นใบขนต้องให้คนตรวจทุกช่องที่เป็นสีแดงหรือสีส้มเสมอ</p>
-    <p>อัปเดตโปรแกรม: ดาวน์โหลด ZIP ใหม่แล้วแตกทับโฟลเดอร์เดิม · ดูโค้ดที่ <a href="https://github.com/Rattanao/CMA">github.com/Rattanao/CMA</a></p>
+    <p>อัปเดตโปรแกรม: ดาวน์โหลด ZIP ใหม่แล้วแตกทับโฟลเดอร์เดิม · ดูโค้ดที่ <a href="https://github.com/Rattanao/CMS">github.com/Rattanao/CMS</a></p>
   </footer>
 </div>
 
